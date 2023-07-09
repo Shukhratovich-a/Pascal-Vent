@@ -1,0 +1,16 @@
+{
+  "files.autoSave": "onFocusChange",
+
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": 1
+    }
+  }
+}
