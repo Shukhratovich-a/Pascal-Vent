@@ -1,0 +1,63 @@
+@import "~styles/variables";
+
+.button {
+  display: block;
+  padding: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+
+  border: none;
+  border-radius: 20px;
+  background-color: rgba($color: $green-secondary, $alpha: 0.25);
+
+  cursor: pointer;
+
+  &--light {
+    background-color: rgba($color: $white, $alpha: 0.45);
+  }
+
+  &--middle {
+    padding: 15px;
+
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.68px;
+
+    border-radius: 40px;
+
+    .button__inner {
+      padding: 32px 126px;
+
+      border-radius: 30px;
+    }
+  }
+
+  &:hover {
+    .button__inner {
+      background-color: $green-light;
+    }
+  }
+
+  &:disabled {
+    .button__inner {
+      background-color: $green-dark;
+    }
+  }
+}
+
+.button__inner {
+  display: block;
+  padding: 19px 42px;
+
+  border-radius: 17px;
+  background-color: $green-primary;
+  box-shadow: inset $box-shadow;
+
+  transition: background-color 0.25s ease-out;
+}
